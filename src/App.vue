@@ -21,7 +21,6 @@
     <!-- footer -->
     <Footer
       v-if="!loading"
-      @getData="getData"
       :todos="todos"
     />
 

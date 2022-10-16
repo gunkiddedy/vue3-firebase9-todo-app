@@ -5,10 +5,6 @@
       class="no-todos is-size-7 has-text-centered is-uppercase has-text-weight-semibold"
     >
       <p>you don't have any todos</p>
-      <button
-        @click="$emit('getData')"
-        class="button is-warning mt-4"
-      > Get Data </button>
     </div>
     <div
       v-else
@@ -23,8 +19,4 @@
   defineProps({
     todos: [Array, Object]
   })
-
-  defineEmits([
-    'getData'
-  ])
 </script>
